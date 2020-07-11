@@ -5,11 +5,14 @@ Ler arquivo local '.csv' e salvar no banco de dados PostgreSQL.
 - readline (ler o arquivo linha por linha)
 - csvtojson (ler o arquivo e converte para json)
 
+## Onde esta o arquivo?
+Esta na pasta src/files/File.csv, a primeira linha contém os nomes das colunas de acordo com o banco, desta forma após o arquivo ser convertido para JSON basta apenas passar o JSON para a função bulkCreate.
+
 ## Como executar?
 - Acesse a pasta clonada e execute um yarn para instalar as dependências
 - Configure o acesso ao banco de dados
 - Execute a migrate para criar a tabela no banco de dados (yarn sequelize db:migrate)
-- Execute os servidor (yarnd dev)
+- Execute os servidor (yarn dev)
 - Acesse localhost:3333
 - Veja os dados cadastrados no banco
 
